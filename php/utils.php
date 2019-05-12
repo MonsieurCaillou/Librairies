@@ -24,7 +24,7 @@
 	}
 	
 	function markdown($file) {
-		require_once('hb.parsedown.php');
+		include_once('https://monsieurcaillou.github.io/Librairies/php/hb.parsedown.php');
 		$parsedown = new Parsedown();
 		$index= file_get_contents($file);
 		$html = $parsedown->text($index);
